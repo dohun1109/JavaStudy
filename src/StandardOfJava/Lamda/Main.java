@@ -29,7 +29,8 @@ public class Main {
         ));
         //java 10
         //java 10에서 도입된 var는 변수를 선언할 때 타입을 생략할 수 있다, 컴파일러가 타입을 추론한다.
-        //그리고 컴파일 타임에 추론하는 것이기 때문에, Runtime에 추가 연산을 하지 않아 성능에 영향을 주지는 않습니다. 그리고 var는 지역 변수에서만 사용할 수 있다. 또한 컴파일러가 타입을 추론할 수 없는 애매한 상황일 때 컴파일 에러가 발생합니다.
+        //그리고 컴파일 타임에 추론하는 것이기 때문에, Runtime 에 추가 연산을 하지 않아 성능에 영향을 주지는 않습니다.
+        // 그리고 var는 지역 변수에서만 사용할 수 있다. 또한 컴파일러가 타입을 추론할 수 없는 애매한 상황일 때 컴파일 에러가 발생합니다.
         //Using anonymous class
 
         var comparatorLastName = new Comparator<Person>() {
@@ -65,7 +66,7 @@ public class Main {
         /**
          * local interface -> jdk16 버전 이후 부터 선언할 수 있는 내부 인터페이스 이다.
          */
-//        @FunctionalInterface -> 오류 ; 이유: 추상메소드        가 여러개 이기 때문
+//        @FunctionalInterface -> 오류 ; 이유: 추상메소드가 여러개 이기 때문
         interface EnhancedComparator<T> extends Comparator<T> {
             int secondLevel(T o1, T o2);
         }
