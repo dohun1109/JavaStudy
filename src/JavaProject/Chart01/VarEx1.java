@@ -16,7 +16,7 @@ public class VarEx1 {
         b = (byte)a;
 
         //p와 stu 변수는 타입의 크기를 비교할 수 없다.
-        Person p = new Person("kim",20,1234);
+        Person p = new Person("kim",20);
         Student stu = new Student("Lee",20);
 
         YNCStudent ystu = new YNCStudent("Kim",20,"영남");
